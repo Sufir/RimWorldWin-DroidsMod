@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef Name="MakeDroidsBase" Abstract="True">
+		<jobString>Craft little robotic helper.</jobString>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="MakeDroidsBase">
+        <defName>MakeDroidCleaner</defName>
+        <label>make cleaner-droid</label>
+        <description>Make a cleaner-droid.</description>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>15000</workAmount>
+        <unfinishedThingDef>UnfinishedDroid</unfinishedThingDef>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>50</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Steel</li>
+              </thingDefs>
+            </filter>
+            <count>5</count>
+          </li>
+        </ingredients>
+        <products>
+          <!-- Component>1</Component -->
+        </products>
+        <skillRequirements>
+            <li>
+                <skill>Crafting</skill>
+                <minLevel>10</minLevel>
+            </li>
+            <li>
+                <skill>Research</skill>
+                <minLevel>5</minLevel>
+            </li>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+</RecipeDefs>

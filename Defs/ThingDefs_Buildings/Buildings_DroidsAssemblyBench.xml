@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings> 
+
+	<ThingDef Name="DroidsAssemblyBenchBase" ParentName="BuildingBase" Abstract="True">
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <ThingClass>Building_WorkTable</ThingClass>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+
+	<ThingDef ParentName="DroidsAssemblyBenchBase">
+		<DefName>DroidsAssemblyBench</DefName>
+		<label>Droids Assembly Bench</label>
+		<Description>Craft basic robotic helpers.</Description>
+		<graphicData>
+			<texPath>Things/Buildings/DroidsAssemblyBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.33,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<Size>(2,1)</Size>
+		<CostList>
+			<Steel>25</Steel>
+			<WoodLog>80</WoodLog>
+            <Component>5</Component>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+        <recipes/>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>ResearchBasicDroids</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+    
+    <ThingDef ParentName="DroidsAssemblyBenchBase">
+		<DefName>AdvancedDroidsAssemblyBench</DefName>
+		<label>Advanced Droids Assembly Bench</label>
+		<Description>Craft advanced robotic helpers.</Description>
+		<graphicData>
+			<texPath>Things/Buildings/AdvancedDroidsAssemblyBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<Size>(3,1)</Size>
+		<CostList>
+			<Steel>100</Steel>
+            <Component>12</Component>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+        <recipes/>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>ResearchAdvancedDroids</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Buildings>

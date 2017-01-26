@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<DroidsAssemblyBench.label>Стол сборки дроидов</DroidsAssemblyBench.label>
+	<DroidsAssemblyBench.description>Стол для сборки роботизированных помощников.</DroidsAssemblyBench.description>
+    
+    <AdvancedDroidsAssemblyBench.label>Стол сборки продвинутых дроидов</AdvancedDroidsAssemblyBench.label>
+	<AdvancedDroidsAssemblyBench.description>Стол для сборки продвинутых роботизированных помощников.</AdvancedDroidsAssemblyBench.description>
+
+</LanguageData>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+	<ThingDef ParentName="BuildingBase">
+        <defName>DroidsRecharger</defName>
+        <label>droids recharger</label>
+        <description>A recharger is used by droids to recharge their batteries.</description>
+        <Size>(1,1)</Size>
+        <rotatable>false</rotatable>
+		<fillPercent>0.25</fillPercent>
+        <pathCost>50</pathCost>
+        <CastEdgeShadows>true</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <DesignationCategory>Power</DesignationCategory>
+		<graphicData>
+            <texPath>Things/Buildings/DroidsRecharger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+            <drawRotated>false</drawRotated>
+		</graphicData>
+		<building>
+          <bed_humanlike>false</bed_humanlike>
+          <bed_ShowSleeperBody>false</bed_ShowSleeperBody>
+          <bed_healPerDay>5</bed_healPerDay>
+		</building>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+          <MaxHitPoints>120</MaxHitPoints>
+          <WorkToBuild>2500</WorkToBuild>
+          <Flammability>1.0</Flammability>
+          <Beauty>-5</Beauty>
+		</statBases>
+		<comps>
+            <li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>350</basePowerConsumption>
+                <startElectricalFires>true</startElectricalFires>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>2</heatPerSecond>
+                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+		</comps>
+        <researchPrerequisites>
+            <li>ResearchBasicDroids</li>
+        </researchPrerequisites>
+    </ThingDef> 
+
+</Buildings>

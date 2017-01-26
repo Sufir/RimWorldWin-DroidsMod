@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchBasicDroids.label>Основные дроиды</ResearchBasicDroids.label>
+	<ResearchBasicDroids.description>Исследование позволяет строить стол для сборки основных роботизированных помощников и пункты зарядки для них.</ResearchBasicDroids.description>
+	<ResearchBasicDroids.descriptionDiscovered>Теперь вы можете собирать роботизированных помощников.</ResearchBasicDroids.descriptionDiscovered>
+	
+    <ResearchAdvancedDroids.label>Продвинутые дроиды</ResearchAdvancedDroids.label>
+	<ResearchAdvancedDroids.description>Исследование позволяет строить стол для сборки продвинутых роботизированных помощников.</ResearchAdvancedDroids.description>
+	<ResearchAdvancedDroids.descriptionDiscovered>Теперь вы можете собирать продвинутых роботизированных помощников.</ResearchAdvancedDroids.descriptionDiscovered>
+	
+</LanguageData>

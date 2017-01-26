@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>ResearchBasicDroids</defName>
+		<label>Basic droids</label>
+		<description>Research allows you to build the Droids Assembly Bench, where colonists can make basic robotic helpers.</description>
+		<descriptionDiscovered>Now your can create robotic helpers.</descriptionDiscovered>
+		<baseCost>2500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+            <li>Machining</li>
+            <li>ComponentAssembly</li>
+		</prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>10</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+    
+    <ResearchProjectDef>
+		<defName>ResearchAdvancedDroids</defName>
+		<label>Advanced droids</label>
+		<description>Research allows you to build the Advanced Droids Assembly Bench, where colonists can make advanced robotic helpers.</description>
+		<descriptionDiscovered>Now your can create advanced robotic helpers.</descriptionDiscovered>
+		<baseCost>4000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>ResearchBasicDroids</li>
+		</prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>10</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+</ResearchProjectDefs>
